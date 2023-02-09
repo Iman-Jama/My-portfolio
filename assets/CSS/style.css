@@ -1,0 +1,154 @@
+/*This is resetting the styling from default*/
+*{
+    margin:0;
+    padding:0;
+    box-size:border-box;
+    background-color: #030b0f;
+    
+}
+/*Adding padding to header*/
+header {
+    padding: 20px;
+       
+}
+
+/*This section styles my navigation bar. I made the navigation at the top of the page. made it black and gave it white border with rounded edges.*/
+header nav.primary-navigation {
+    padding:10px;
+    display:flex;
+    justify-content: center;
+    border: 5px solid #ffffff;
+    border-radius: 10%;
+    background-color: #030b0f;
+    
+/* Made the links, be central,deleted the bullet points and removed the underline and made them uppercase.*/   
+     
+}
+ul li {
+    display: inline-block;
+    list-style: none;
+    font-size: 25px;
+    font-weight:bolder;
+    margin-left: 25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color:#ffffff;
+}
+a {
+    color: black;
+    text-transform: uppercase;
+
+}
+
+/*using pseudoselectors to style the links*/
+a:link {
+    color:black;
+    text-decoration:none;
+}   
+
+a:visited {
+    color:grey;
+    text-decoration:none;
+}
+a:hover {
+    color: hotpink;
+    text-decoration:none;
+}
+a:active {
+    color:blueviolet;
+    text-decoration:none;
+}  
+
+/*I made the header large and central. Ensured it was displayed as flex, so when screen gets smaller it adjusts as necessary*/
+
+h1 {
+    color: #ffffff;
+    text-align: left;
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+    font-family: monospace;
+
+/*Made this section, central and ensured it was also flex-wrapped.*/    
+}
+main article.about{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    color:#ffffff;
+    margin-right:25px;
+    font-family: monospace;
+}
+/*Following the theme of my page, i put the emoji of me central and rounded the edges. Ensured the picture was smaller than the initial file size, by using the max-width property*/
+article section img.Hello-pic {
+    display:block;
+    margin-left:auto;
+    margin-right: auto;
+    max-width:13%;
+    border-radius: 50px;
+}
+/*made both the image and the intro text central and applied the flex-wrap selector. I also added a link to my horiseon project to the image.I rounded the edges of the image.*/
+.intro {
+    display:flex; 
+    justify-content: center;
+    font-size: 25px;
+    color:#ffffff;
+    font-family: monospace;
+    text-align: center;
+    align-items: center;
+    
+}
+
+.Horiseon {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top:20px;
+   
+/*added border and made the edges of the image circular. Also reduced the size of the image*/
+
+}
+#project1 {
+    width:900px;
+    height:500px;
+    border-radius:10%;
+    border:5px solid #ffffff; padding:3px; margin:5px;
+   
+}
+/*added empty boxes to populate as i do future projects. Ensured that they are all smae size, and i flex-wrapped them, with a direction of row.I made the words"future projects", into a link, which currently goes to google, but once i complete other projects i will link it here.*/
+.future-projects {
+    display: inline-block;
+    flex-wrap: wrap;
+    flex-direction:row;
+    justify-content: center;
+    border:5px solid #ffffff; padding:3px; margin:5px;
+    background-color: rgb(14, 29, 105); 
+    font-family: monospace;
+    font-size: 20px;
+    width:300px;
+    height:200px;
+    color:#ffffff;
+    
+}
+/*used pseudoselectors here for my links in the footer.*/
+article section p a:link {
+    color:#ffffff
+}
+article section p a:visited {
+    color:#ffffff
+}
+article section p a:hover {
+    color:hotpink
+}
+
+/*styled my footer section so it is central.*/
+.contact {
+    color: white;
+    text-align: center;
+    font-size: 20px;
+
+
+}
+footer a:link {
+    color:#ffffff
+}
+

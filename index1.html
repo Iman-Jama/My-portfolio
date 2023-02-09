@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iman's Portfolio</title>
+    <link rel="stylesheet" href="assets/CSS/style.css">
+</head>
+<body>
+    <!--This is my navigation section. I have given it a aria-label to help with assistive technology and also a class to help with CSS styling-->
+    <header class="header1">
+        <nav aria-label="primary-navigation" class="primary-navigation">
+            <ul>
+                <li>
+                    <a href="#About">About me</a>
+                </li>
+                <li>
+                    <a href="#work">My work</a>
+                </li>
+                <li>
+                    <a href="#contact">Contact me</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+<!--Made use of the element MAIN and article. Use of sematic HTML, ensures that even those using assistive technology will be able to navigate my webpage-->
+<main>
+    <article id="About"><!--Added an ID here, which is linked to my navigation section-->
+     <section>
+        <h1>Hi👋, I'm Iman</h1>
+        <!--Added an emoji of myself with a class and alt attribute. -->
+        <img class="Hello-pic" src="assets/Images/Hello.png" alt="Emoji picture of me"><!---->
+        <p class="intro">I'm an aspiring fullstack developer based in Birmingham. <br> This page will showcase the skills i've learnt soo far. <br> Click on the images to be taken to each of my projects. 👩🏽‍💻</p>
+        
+    </section>
+    </article>
+    
+    <!--Also have a picture of my first project and added a link to the image which will take you to my webpage once clicked.-->
+    
+    <article class="Horiseon">
+    
+            <section>
+                <a target="_blank" href="https://iman-jama.github.io/Bootcamp-challenge/"><img src="assets/images/screenshot1.png" alt="A screenshot of my first project" id="project1"></a>
+                
+            </section>
+    </article>
+    <!--This section u have made use of section and p elements. These areas will be populated with details of my future projects-->
+    <article>
+        <section class="future-projects">
+            <p><a href="https://www.google.co.uk"> Future <br> projects</a></p>
+        </section>
+    
+        <section class="future-projects">
+            <p><a href="https://www.google.co.uk"> Future <br> projects</a></p> 
+        </section>
+    
+        <section class="future-projects">
+            <p><a href="https://www.google.co.uk"> Future <br> projects</a></p>
+        </section>
+
+        <section class="future-projects">
+            <p><a href="https://www.google.co.uk"> Future <br> projects</a></p>
+        </section>
+
+        <section class="future-projects">
+            <p><a href="https://www.google.co.uk"> Future <br> projects</a></p>
+        </section>
+
+        <section class="future-projects">
+            <p><a href="https://www.google.co.uk"> Future <br> projects</a></p>
+        </section>
+    </article>
+<!--This is the footer section. I have added a a link with "href:mailto", this will automatically open an email app, and that is how i can be contacted. I also have a a link with "href:#", whcih will link to the top of the page once clicked-->
+    <footer class="contact" id="contact">
+        <p class="contact">
+        &lt;&lt;&lt; &copy; <a class="contact">Iman Jama</a>&gt;&gt;&gt;
+        </p>
+        <h5 class="contact">Contact me</h5>
+        <a href="mailto:someone@example.com" class="contact">SEND EMAIL</a>
+        
+        <a class= "contact" href="#">Back to top</a>
+        
+    </footer>
+</main>
+    
+</body>
+</html>
