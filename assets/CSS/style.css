@@ -34,14 +34,14 @@ ul li {
     color:#ffffff;
 }
 a {
-    color: black;
+    color: #ffffff;
     text-transform: uppercase;
 
 }
 
 /*using pseudoselectors to style the links*/
 a:link {
-    color:black;
+    color:#ffffff;
     text-decoration:none;
 }   
 
