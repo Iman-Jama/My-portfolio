@@ -6,34 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Iman's Portfolio</title>
     <link rel="stylesheet" href="assets/CSS/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/f02682641e.js" crossorigin="anonymous"></script>
+    
 </head>
-<body>
+<style>
+   
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+    #check:checked ~ ul{
+        left:0
+    }
+    </style>
+<body class="font-[Poppins] bg-white">
     <!--This is my navigation section. I have given it a aria-label to help with assistive technology and also a class to help with CSS styling-->
     <header class="header1">
-        <nav aria-label="primary-navigation" class="primary-navigation">
-            <ul>
+        
+        <nav aria-label="primary-navigation" class="primary-navigation, bg-sky-900 h-20 w-full fixed">
+            <input type="checkbox" id="check" hidden>
+            <label for="check" class="float-right text-black leading-[80px] mr-10 text-3xl lg:hidden">
+                <i class="fas fa-bars"></i>
+            </label>
+            <label class="text-white leading-[80px] pl-12 md:leading-[80px] md:pl-24 md:text-4xl text-3xl">Navigation</label>
+            <ul class="float-right mr-10 lg:flex lg:relative leading-[80px] space-x-4 text-black uppercase rounded fixed h-[100vh] lg:h-0 w-[100%] lg:w-fit top-20 lg:top-0 left-[-100%] lg:left-0 transition-all duration-300 lg:transition-none text-center bg-slate-900">
                 <li>
-                    <a href="#About">About me</a>
+                    <a href="#" class=" rounded py-[7px] px-[13px] text-[17px] hover:bg-slate-300 hover:text-black transition-all duration-300 text-white">Home</a>
                 </li>
                 <li>
-                    <a href="#work">My work</a>
+                    <a href="#About" class=" rounded py-[7px] px-[13px] text-[17px] text-white hover:text-black hover:bg-slate-300 transition-all duration-300" >About me</a>
                 </li>
                 <li>
-                    <a href="#contact">Contact me</a>
+                    <a href="#work" class=" rounded py-[7px] px-[13px] text-[17px] text-white hover:text-black hover:bg-slate-300 transition-all duration-300">Projects</a>
                 </li>
+                <li>
+                    <a href="#contact" class=" rounded py-[7px] px-[13px] text-[17px] text-white hover:text-black hover:bg-slate-300 transition-all duration-300">Contact me</a>
+                </li>
+               
             </ul>
         </nav>
     </header>
 <!--Made use of the element MAIN and article. Use of sematic HTML, ensures that even those using assistive technology will be able to navigate my webpage-->
 <main>
-    <article id="About"><!--Added an ID here, which is linked to my navigation section-->
+    <div id="About"><!--Added an ID here, which is linked to my navigation section-->
      <section>
         <h1>Hi👋, I'm Iman</h1>
         <!--Added an emoji of myself with a class and alt attribute. -->
-        <img class="Hello-pic" src="assets/Images/Hello.png" alt="Emoji picture of me"><!---->
-        <p class="intro">I'm an aspiring fullstack developer based in Birmingham. <br> This page will showcase the skills i've learnt soo far. <br> Click on the images to be taken to each of my projects.</p>
+        <img class="Hello-pic mt-20" src="assets/Images/Hello.png" alt="Emoji picture of me"><!---->
+        <p class="intro">I'm Iman <br> I'm an aspiring fullstack developer based in Birmingham. <br> This page will showcase the skills i've learnt soo far. <br> Click on the images to be taken to each of my projects.</p>
         
-    </section>
+     </div>
     </article>
     
     <!--Also have a picture of my first project and added a link to the image which will take you to my webpage once clicked.-->
@@ -41,43 +61,37 @@
     <article class="Horiseon">
     
             <section>
-                <a target="_blank" href="https://iman-jama.github.io/Bootcamp-challenge/"><img src="assets/Images/screenshot1.png" alt="A screenshot of my first project" id="project1"></a>
+                <a target="_blank" href="https://leesaal.github.io/TheMovieMatrix/"><img src="assets/images/The-movie-project.png" alt="A screenshot of my first project" id="project1" class="rounded-lg"></a>
+
                 
             </section>
     </article>
     <!--This section u have made use of section and p elements. These areas will be populated with details of my future projects-->
-    <article>
+    <article class="grid grid-cols-4 gap-1 mt-20" id="work">
         <section class="future-projects">
-            <p><a href="https://www.google.co.uk"> Future <br> projects</a></p>
+            <p><a target="_blank" href="https://iman-jama.github.io/Weather-App/"><img src="assets/images/Weather-app.png" alt="A screenshot of my weather Application" id="WeatherApp" class="rounded-lg w-96 h-80"></a></p>
         </section>
     
         <section class="future-projects">
-            <p><a href="https://www.google.co.uk"> Future <br> projects</a></p> 
+            <p><a target="_blank" href="https://iman-jama.github.io/Password-generator/"><img src="assets/images/Password-generator.png" alt="A screenshot of my password generator application" id="Password-generator" class="rounded-lg w-96 h-80"></a></p>
         </section>
     
-        <section class="future-projects">
-            <p><a href="https://www.google.co.uk"> Future <br> projects</a></p>
+        <section class="future-projects ">
+            <p><a target="_blank" href="https://iman-jama.github.io/Daily-Workday-Calendar/"><img src="assets/images/daily-calendar.png" alt="A screenshot of my daily calendar app" id="DailyCaledarApp" class="rounded-lg w-96 h-80"></a></p>
         </section>
 
         <section class="future-projects">
-            <p><a href="https://www.google.co.uk"> Future <br> projects</a></p>
+            <p><a target="_blank" href="https://iman-jama.github.io/Coding-quiz/"><img src="assets/images/coding-quiz.png" alt="A screenshot of my Coding-quiz" id="codingApp" class="rounded-lg w-96 h-80"></a></p>>
         </section>
 
-        <section class="future-projects">
-            <p><a href="https://www.google.co.uk"> Future <br> projects</a></p>
-        </section>
-
-        <section class="future-projects">
-            <p><a href="https://www.google.co.uk"> Future <br> projects</a></p>
-        </section>
     </article>
 <!--This is the footer section. I have added a a link with "href:mailto", this will automatically open an email app, and that is how i can be contacted. I also have a a link with "href:#", whcih will link to the top of the page once clicked-->
     <footer class="contact" id="contact">
         <p class="contact">
-        &lt;&lt;&lt; &copy; <a class="contact">Iman Jama</a>&gt;&gt;&gt;
+        &copy; <a class="contact">Iman Jama</a>
         </p>
-        <h5 class="contact">Contact me</h5>
-        <a href="mailto:someone@example.com" class="contact">SEND EMAIL</a>
+        <h5 class="contact">Contact me:
+        <a href="mailto:someone@example.com" class="contact">SEND EMAIL</a></h5>
         
         <a class= "contact" href="#">Back to top</a>
         
