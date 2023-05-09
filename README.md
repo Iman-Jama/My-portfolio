@@ -13,10 +13,10 @@ I ensured that the website had the display function flex, and felx-wrap througho
 In the footer section, i made used of the href:mailto function within the <em>a</em> element. 
  
 ## Below are screenshots of my website:
-![picture](/assets/Images/portfolio-screenshot.png)
+![picture](/assets/Images/website%20screenshot.png)
 
   
-![picture](/assets/Images/2-screenshot.png)
+![picture](/assets/Images/2nd%20website%20screenshot.png)
   
   
 ### Contact 
